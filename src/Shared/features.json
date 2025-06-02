@@ -1,0 +1,24 @@
+{
+    "features": [
+        {
+            "label": "Willing to drop-off/deliver",
+            "name": "Drop-off/deliver",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Willing to ship the item",
+            "name": "Ship the item",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Offer curbside pickup",
+            "name": "Curbside pickup",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Cash accepted",
+            "name": "Cash accepted",
+            "fieldType": "checkbox"
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+
+{
+    "Details" : [
+        {
+            "label" : "Listing Title",
+            "name" : "listingTitle",
+            "fieldType" : "text",
+            "required" : true,
+            "column" : 2,
+            "icon" : "ListingTitleIcon"
+        },
+        {
+            "label" : "Tagline",
+            "name" : "tagline",
+            "fieldType" : "text",
+            "column" : 2,
+            "icon" : "TagLineIcon"
+        },
+        {
+            "label" : "Original Price",
+            "name" : "originalPrice",
+            "fieldType" : "number",
+            "column" : 1,
+            "icon" : "OriginalPriceIcon"
+        },
+        {
+            "label" : "Selling Price",
+            "name" : "sellingPrice",
+            "fieldType" : "number",
+            "required" : true,
+            "column" : 1,
+            "icon" : "SellingPriceIcon"
+        },
+        {
+            "label" : "Category",
+            "name" : "category",
+            "fieldType" : "dropdown",
+            "options":["Decorations", "Appliances", "Books", "Men's Clothes", "Women's Clothes", "Baby & Kids", "Skincare", "Bodycare", "Haircare", "Pet", "Accessories", "Others"],
+            "required" : true,
+            "column" : 1,
+            "icon" : "CategoryIcon"
+        },
+        {
+            "label" : "Condition",
+            "name" : "condition",
+            "fieldType" : "dropdown",
+            "options":["New", "Like New", "Used", "Good", "Fair"],
+            "required" : true,
+            "column" : 1,
+            "icon" : "ConditionIcon"
+        },
+        {
+            "label" : "Location",
+            "name": "location",
+            "fieldType" : "dropdown",
+            "options":["North York", "Brampton", "Mississauga", "Scarborough", "Etobicoke"],
+            "required" : true,
+            "column" : 2,
+            "icon" : "LocationIcon"
+        },
+        {
+            "label" : "Description",
+            "name" : "description",
+            "fieldType" : "textarea",
+            "required" : true,
+            "column" : 2,
+            "icon" : "DescriptionIcon"
+        }
+    ]
+}
