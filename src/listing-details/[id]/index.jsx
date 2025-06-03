@@ -14,17 +14,13 @@ import Footer from '@/components/Footer';
 import MostSearched from '@/components/MostSearched';
 import { Separator } from '@/components/ui/separator';
 import SimilarItems from '@/components/SimilarItems';
-import { useUser } from '@clerk/clerk-react';
 import ItemsSameSeller from '@/components/ItemsSameSeller';
 import OwnersDetail from '../components/OwnersDetail';
 
 function ListingDetail() {
 
-    const {user} = useUser();
-    const sellerEmail = user?.primaryEmailAddress.emailAddress;
-    console.log("Seller: " + sellerEmail);
-
     const {id}= useParams();
+    const numericId = Number(id);
     const [itemDetail, setItemDetail] = useState();
 
     useEffect(() => {
@@ -38,14 +34,14 @@ function ListingDetail() {
     const IncrementViewCount = async () => {
         await db.update(Listing).set({
             view: sql`${Listing.view} + 1` 
-            }).where(eq(Listing.id, id)) 
+            }).where(eq(Listing.id, numericId))
     }
 
     const GetItemDetail=async()=> {
 
         const result=await db.select().from(Listing)
         .innerJoin(Images, eq(Listing.id, Images.ListingId))
-        .where(eq(Listing.id, id));
+        .where(eq(Listing.id, numericId));
 
         const resp=Service.FormatResult(result);
         setItemDetail(resp[0]);
@@ -56,6 +52,7 @@ function ListingDetail() {
         <title>Item Details</title>
         <link rel="icon" type="image/x-icon" href="/logo.svg"></link>
         <Header/>
+        
         <div className="p-10 md:px-20">
             <DetailHeader itemDetail={itemDetail}/>
             
