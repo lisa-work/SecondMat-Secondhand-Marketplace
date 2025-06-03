@@ -51,15 +51,15 @@ function Footer() {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="/home#popular" className="text-gray-700 transition hover:opacity-75"> Popular </a>
+                    <a href="/search-highest-view" className="text-gray-700 transition hover:opacity-75"> Popular </a>
                   </li>
 
                   <li>
-                    <a href="/home#category" className="text-gray-700 transition hover:opacity-75"> Categories </a>
+                    <a href="/search-category" className="text-gray-700 transition hover:opacity-75"> Categories </a>
                   </li>
 
                   <li>
-                    <a href="home#neighborhood" className="text-gray-700 transition hover:opacity-75"> Neighborhood </a>
+                    <a href="/search-location" className="text-gray-700 transition hover:opacity-75"> Neighborhood </a>
                   </li>
                 </ul>
               </div>
