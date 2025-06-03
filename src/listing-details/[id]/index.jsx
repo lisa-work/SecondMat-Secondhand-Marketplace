@@ -10,13 +10,13 @@ import ImageGallery from '../components/ImageGallery';
 import Description from '../components/Description';
 import Pricing from '../components/Pricing';
 import Specification from '../components/Specification';
-import OwnersDetail from '../components/ownersDetail';
 import Footer from '@/components/Footer';
 import MostSearched from '@/components/MostSearched';
 import { Separator } from '@/components/ui/separator';
 import SimilarItems from '@/components/SimilarItems';
 import { useUser } from '@clerk/clerk-react';
 import ItemsSameSeller from '@/components/ItemsSameSeller';
+import OwnersDetail from '../components/OwnersDetail';
 
 function ListingDetail() {
 
