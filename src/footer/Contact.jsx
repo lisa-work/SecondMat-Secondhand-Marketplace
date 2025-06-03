@@ -1,9 +1,3 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import WelcomePic from '@/components/WelcomePic'
-import React from 'react'
-import AboutUs from './AboutUs'
-
 function MyContact() {
   return (
     <div>

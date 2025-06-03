@@ -4,7 +4,7 @@ const SendBirdApplicationId=import.meta.env.VITE_SENDBIRD_APP_ID;
 const SendBirdApiToken=import.meta.env.VITE_SENDBIRD_API_TOKEN
 
 const FormatResult = (resp) => {
-    const result = {}; // change to object
+    const result = {};
     const finalResult = [];
 
     resp.forEach((item) => {

@@ -10,28 +10,6 @@ function Header() {
   const location = useLocation();
   const [keyword, setKeyword] = useState();
   const navigate = useNavigate();
-  
-  useEffect(() => 
-      {
-        searchKey()
-      }, [])
-      
-  const searchKey = (keyword) => {
-      setKeyword(keyword);
-        console.log(keyword);
-      }
-
-  const handleSearch = () => {
-    if (keyword.trim() !== '') {
-      navigate(`/key?keyword=${encodeURIComponent(keyword.trim())}`);
-    }
-  };
-
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
-      handleSearch();
-    }
-  };
 
       useEffect(() => {
         const params = new URLSearchParams(window.location.search);
@@ -39,12 +17,35 @@ function Header() {
         setKeyword(initialKeyword);
       }, []);
 
+        useEffect(() => 
+      {
+        searchKey()
+      }, [])
+      
+      const searchKey = (keyword) => {
+          setKeyword(keyword);
+            console.log(keyword);
+          }
+
+      const handleSearch = () => {
+        if (keyword.trim() !== '') {
+          navigate(`/key?keyword=${encodeURIComponent(keyword.trim())}`);
+        }
+      };
+
+      const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+          handleSearch();
+        }
+      };
+
   return (
   <div className="sticky top-0 z-1000">
     
     <div className="shadow-lg rounded-b-sm md:rounded-b-lg bg-white">
 
       <div className = 'flex justify-between gap-10 items-center shadow-sm px-4'>
+
         <Link to={'/home'}>
           <img src='/logo.svg' alt='logo' className='w-20 h-20'/>
         </Link>
@@ -65,7 +66,6 @@ function Header() {
             </div>
 
         <ul className='hidden md:flex md:gap-7 lg:gap-10 '>
-          {/* ml-20 */}
 
           {location.pathname !== '/home' && (
             <Link to={'/home'}>

@@ -12,7 +12,7 @@ import {
   } from "@/components/ui/carousel"
 import { db } from './../../configs';
 import { Images, Listing } from './../../configs/schema';
-import { and, desc, eq } from 'drizzle-orm';
+import { and, eq } from 'drizzle-orm';
 import Service from '@/Shared/Service';
 import { FaLocationDot } from "react-icons/fa6";
 import { Button } from './ui/button';
@@ -38,7 +38,6 @@ function ItemsNearYou() {
                   eq(Listing.location, location),
               )
           )
-          .orderBy(desc(Listing.sellingPrice))
           .limit(20);
                
               const resp = Service.FormatResult(result);
@@ -55,7 +54,6 @@ function ItemsNearYou() {
 
       <div>
         <div>
-            
           <div className='flex items-center border-1 my-5 rounded-xl 
                 hover:shadow-md hover:opacity-80 w-fit h-10 border-green-900 ' >
                     <FaLocationDot className="mx-2 text-green-900"/>

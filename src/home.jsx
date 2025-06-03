@@ -7,7 +7,6 @@ import Footer from './components/Footer'
 import InfoSection from './components/InfoSection'
 import ItemsNearYou from './components/ItemsNearYou'
 import WelcomePic from './components/WelcomePic'
-import HeaderNoInput from './components/HeaderNoInput'
 
 function Home() {
   return (
