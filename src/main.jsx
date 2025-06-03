@@ -18,12 +18,12 @@ import ErrorBoundary from './ErrorBoundary'
 import NotFound from './NotFound'
 import Layout from './Layout'
 import LegalPolicy from './components/LegalPolicy'
-import Keywords from './search/keywords'
 import RadioSearch from './search/RadioSearch'
 import SearchByHighestViews from './search/highest-view'
 import SearchSameSellers from './search/same-seller/same-seller'
 import SearchItemsNearby from './search/items-near-you'
 import ComingSoon from './ComingSoon'
+import Keywords from './search/Keywords'
 
 const router = createBrowserRouter([
   {
