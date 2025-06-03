@@ -44,7 +44,7 @@ function AboutUs() {
                         <p className="text-md mx-7 my-1 mb-7"><span className="italic"><strong>Together, let's build a vibrant, sustainable future — one listing at a time.</strong></span></p>
                     </div>
 
-                    <div className="border rounded-lg hover:shadow-md border-green-900 my-5">
+                    <div className="border rounded-lg hover:shadow-md border-green-900 my-5" id="contact">
                         <h3 className="m-7 bg-green-700 p-2 rounded-md font-semibold text-2xl md:text-3xl text-white">Contact Information</h3>
                         <ul>
                             <li>
