@@ -25,15 +25,15 @@ function LegalPolicy() {
         <Tabs defaultValue="terms-condition" className="w-full mt-7 p-10">
 
             <TabsList className="shadow-md gap-3 bg-gray-50">
-                <TabsTrigger value="terms-condition" id="terms-condition" className="text-md text-green-900 font-bold 
+                <TabsTrigger value="terms-condition" id="terms-condition" className="text-sm text-green-900 font-bold 
                 hover:underline underline-offset-2 focus:no-underline">Terms & Condition</TabsTrigger>
-                <TabsTrigger value="returns-policy" id="return-policy" className="text-md text-green-900 font-bold 
+                <TabsTrigger value="returns-policy" id="return-policy" className="text-sm text-green-900 font-bold 
                 hover:underline underline-offset-2 focus:no-underline">Returns Policy</TabsTrigger>
-                <TabsTrigger value="refund-policy" id="refund-policy" className="text-md text-green-900 font-bold 
+                <TabsTrigger value="refund-policy" id="refund-policy" className="text-sm text-green-900 font-bold 
                 hover:underline underline-offset-2 focus:no-underline">Refund Policy</TabsTrigger>
-                <TabsTrigger value="privacy-policy" id="privacy-policy" className="text-md text-green-900 font-bold
+                <TabsTrigger value="privacy-policy" id="privacy-policy" className="text-sm text-green-900 font-bold
                 hover:underline underline-offset-2 focus:no-underline">Privacy Policy</TabsTrigger>
-                <TabsTrigger value="prohibited-items-policy" id="prohibited-items-policy" className="text-md text-green-900 font-bold 
+                <TabsTrigger value="prohibited-items-policy" id="prohibited-items-policy" className="text-sm text-green-900 font-bold 
                 hover:underline underline-offset-2 focus:no-underline">Prohibited Items Policy</TabsTrigger>
             </TabsList>
 

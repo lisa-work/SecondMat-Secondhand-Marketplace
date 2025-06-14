@@ -24,7 +24,7 @@ function Item({item}) {
 
               <div className="flex flex-row  items-center justify-between">
               <h2 className="text-sm lg:text-md text-gray-500">{item?.view} views</h2>
-              <h2 className="text-sm lg:text-md flex items-center justify-end text-blue-500 
+              <h2 className="hidden text-xs md:text-sm lg:text-md lg:flex items-center justify-end text-blue-500 
                 hover:cursor-pointer hover:text-blue-600 hover:underline 
                 hover:underline-offset-2">
                 <IoOpenOutline className="mr-2"/>
@@ -57,8 +57,8 @@ function Item({item}) {
                     </div>                          
 
                   <Separator className="my-3"/>
-                  <div className="hidden lg:flex items-center mt-2">
-                  <h2 className="font-thin mb-3 line-clamp-2">{item?.description}</h2>
+                  <div className="flex items-center mt-2">
+                  <h2 className="text-sm font-thin mb-3 line-clamp-2">{item?.description}</h2>
                   </div>
                 </div>
             </div>

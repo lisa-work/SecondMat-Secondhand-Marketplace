@@ -15,7 +15,7 @@ function Category() {
                   <div className="border rounded-2xl items-center 
                   flex flex-col p-2 hover:scale-108 hover:shadow-sm transition-all">
                       <img src={category.icon} width={125} height={125}/>
-                      <h2 className="mt-1 text-sm">{category.category}</h2>
+                      <h2 className="mt-1 text-xs md:text-sm">{category.category}</h2>
                   </div>
                 </Link>
               ))}

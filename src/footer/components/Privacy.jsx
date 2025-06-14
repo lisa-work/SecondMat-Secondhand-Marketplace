@@ -12,7 +12,7 @@ function Privacy() {
         <h2 className="font-bold text-3xl md:text-5xl text-green-900 mb-7">Privacy Policy</h2>
         <p>At SecondMat, your privacy is important to us. This Privacy Policy explains how we collect, use, 
             and protect your information when you use our website and services.</p>
-      <div className="md:grid md:grid-cols-3 md:gap-7 grid-auto-columns items-center justify-center mt-3">
+      <div className="md:grid md:grid-cols-3 md:gap-7 grid-auto-columns items-start justify-center mt-3">
       <div className="md:border-r-2 md:pr-3">            
         <div className="my-3">
         <strong>1. Information We Collect</strong>
