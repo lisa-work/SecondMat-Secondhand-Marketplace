@@ -80,7 +80,7 @@ const GetItemList = async () => {
             <h2 className="font-bold text-3xl md:text-4xl text-green-900">{category}</h2>
 
 
-            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-7'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-7'>
                 {itemList?.length>0? itemList.map((item,index)=>(
                     <div key={index}>
                         <Item item={item} />

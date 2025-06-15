@@ -8,7 +8,7 @@ function Pricing({itemDetail}) {
           <h2 className="font-bold mt-1 text-5xl text-center text-green-900">CAD {itemDetail?.sellingPrice}</h2>
           <Button 
           className="mt-7 mb-2 bg-green-900 text-white hover:bg-green-800 text-md" size="lg">
-            Make an offer
+            Selling Price
           </Button>
       </div>
     </div>
