@@ -8,7 +8,7 @@ export default function ComingSoon() {
             <title>Coming Soon</title>
             <link rel="icon" type="image/x-icon" href="/logo.svg"></link>
             
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center mx-5">
                 <h1 className="text-[100px] leading-30 md:text-[150px] font-bold text-center text-green-900 flex flex-col justify-center items-center mt-30">Coming Soon</h1>
                 <p className="text-md md:text-lg text-center text-green-800 mt-10 md:mt-15">The feature is currently under development, we will see you soon</p>
                 <Link to="/home">

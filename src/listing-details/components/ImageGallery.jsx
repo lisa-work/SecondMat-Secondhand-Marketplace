@@ -9,14 +9,14 @@ import {
 
 function ImageGallery({itemDetail}) {
   return (
-    <div className="px-1 mx-7 lg:my-7 lg:h-112 flex items-center justify-center">
+    <div className="px-1 mx-7 my-1 lg:my-7 lg:h-112 flex items-center justify-center">
 
           <Carousel className="size-fit flex items-center">
           <CarouselContent>
             {itemDetail?.images.length > 0 ? itemDetail.images.map((image, index) => (
               <CarouselItem key={index} className="size-full">
                 <img src={image.imageUrl} 
-                  className="size-fit object-contain rounded-2xl my-5" />
+                  className="size-fit object-contain rounded-2xl my-1 md:my-5" />
               </CarouselItem>
             )):
             <CarouselItem className='h-[500px] bg-slate-200 animate-pulse'></CarouselItem>

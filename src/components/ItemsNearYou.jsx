@@ -16,6 +16,7 @@ import { and, eq } from 'drizzle-orm';
 import Service from '@/Shared/Service';
 import { FaLocationDot } from "react-icons/fa6";
 import { Button } from './ui/button';
+import ItemImage from './ItemImage';
 
 
 function ItemsNearYou() {
@@ -69,6 +70,7 @@ function ItemsNearYou() {
                     </Select>
           </div>
 
+        <div className="hidden md:block">
           <Carousel className="mb-7">
           <CarouselContent>
             {itemList?.length>0? itemList.map((item, index) => (
@@ -84,6 +86,15 @@ function ItemsNearYou() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+        </div>
+
+    <div className="md:hidden grid grid-cols-3">
+    {itemList?.length>0? itemList.map((item, index) => (
+      <ItemImage item={item}/>
+    )):
+      <div className='h-[200px] bg-slate-200 animate-pulse'></div>
+    } 
+    </div>
 
           <div className="flex flex-row-reverse">
             <Link to={"/search-location?location="+location}>

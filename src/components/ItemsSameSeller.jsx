@@ -13,6 +13,7 @@ import { and, desc, eq, ne } from 'drizzle-orm';
 import Service from '@/Shared/Service';
 import { Button } from './ui/button';
 import { Link } from 'react-router-dom';
+import ItemImage from './ItemImage';
 
 function ItemsSameSeller({sellerEmail, id}) {
       const [itemList, setItemList] = useState([]);
@@ -47,7 +48,7 @@ function ItemsSameSeller({sellerEmail, id}) {
       text-center mb-6 text-green-900'>Items From The Same Seller</h2>
 
       <div>
-        <div>
+        <div className="hidden md:block">
           <Carousel className="mb-7">
           <CarouselContent>
             {itemList?.length>0? itemList.map((item, index) => (
@@ -63,6 +64,14 @@ function ItemsSameSeller({sellerEmail, id}) {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+        </div>
+
+        <div className="md:hidden grid grid-cols-3">
+        {itemList?.length>0? itemList.map((item, index) => (
+          <ItemImage item={item}/>
+        )):
+          <div className='h-[200px] bg-slate-200 animate-pulse'></div>
+        } 
         </div>
 
         <div className="flex flex-row-reverse">

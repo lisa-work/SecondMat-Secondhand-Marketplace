@@ -13,6 +13,7 @@ import { Images, Listing } from './../../configs/schema';
 import { and, desc, eq, ne } from 'drizzle-orm';
 import Service from '@/Shared/Service';
 import { Button } from './ui/button';
+import ItemImage from './ItemImage';
 
 
 function SimilarItems({category, id}) {
@@ -55,7 +56,7 @@ function SimilarItems({category, id}) {
 
       <div>
         <div>
-          
+          <div className="hidden md:block">
           <Carousel className="mb-7">
           <CarouselContent>
             {itemList?.length>0? itemList.map((item, index) => (
@@ -71,6 +72,15 @@ function SimilarItems({category, id}) {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+        </div>
+
+        <div className="md:hidden grid grid-cols-3">
+        {itemList?.length>0? itemList.map((item, index) => (
+          <ItemImage item={item}/>
+        )):
+          <div className='h-[200px] bg-slate-200 animate-pulse'></div>
+        } 
+        </div>
 
           <div className="flex flex-row-reverse">
             <Link to={"/search-category?category="+category}>

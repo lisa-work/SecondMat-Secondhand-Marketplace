@@ -42,7 +42,7 @@ function OwnersDetail({itemDetail}) {
   }
 
   return (
-    <div className="p-3 border rounded-xl shadow-md mt-10 hover:shadow-lg">
+    <div className="p-3 border rounded-xl shadow-md mt-1 lg:mt-7 hover:shadow-lg">
       
         <h2 className="font-bold text-green-800 text-2xl my-3">Owner's Contact</h2>
 
@@ -53,12 +53,13 @@ function OwnersDetail({itemDetail}) {
           <h2 className="mt-2 text-gray-500 hover:opacity-75 cursor-pointer">{itemDetail?.createdBy}</h2>
           </div>
         </div>
-<Link to={'/coming-soon'}>
-        <Button 
-          className="w-full mt-6 bg-green-900 hover:bg-green-800 cursor-pointer">
-          <p className="text-md">Download our app to message the owner</p>
-        </Button>
-</Link>
+
+        <Link to={'/coming-soon'}>
+                <Button 
+                  className="w-full mt-6 bg-green-900 hover:bg-green-800 cursor-pointer">
+                  <p className="text-md">Download our app to message the owner</p>
+                </Button>
+        </Link>
     </div>
   )
 }

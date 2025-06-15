@@ -56,7 +56,7 @@ function ListingDetail() {
         <div className="p-10 md:px-20">
             <DetailHeader itemDetail={itemDetail}/>
             
-            <div className="grid grid-cols-1 items-start justify-around lg:grid-cols-3 w-full mt-10 gap-5">
+            <div className="grid grid-cols-1 items-start justify-around lg:grid-cols-3 w-full mt-1 lg:mt-10 gap-5">
 
                 <div className="col-span-1">
                     <div className="w-full h-full">
@@ -74,6 +74,7 @@ function ListingDetail() {
                     <Description itemDetail={itemDetail}/>
                 </div>
             </div>
+            <Separator className="my-3"/>
             <OwnersDetail itemDetail={itemDetail}/>
         </div>
 

@@ -14,6 +14,7 @@ import { desc, eq } from 'drizzle-orm';
 import Service from '@/Shared/Service';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
+import ItemImage from './ItemImage';
 
 function MostSearched() {
     const [itemList, setItemList] = useState([]);
@@ -40,6 +41,7 @@ function MostSearched() {
         <h2 className='mt-10 font-bold text-xl md:text-2xl 
         text-center mb-6 text-green-900' >Top 10 Highest View Items</h2>
 
+    <div className="hidden md:block">
           <Carousel className="mb-7">
           <CarouselContent>
             {itemList?.length>0? itemList.map((item, index) => (
@@ -53,6 +55,15 @@ function MostSearched() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+    </div>
+
+    <div className="md:hidden grid grid-cols-3">
+    {itemList?.length>0? itemList.map((item, index) => (
+      <ItemImage item={item}/>
+    )):
+      <div className='h-[200px] bg-slate-200 animate-pulse'></div>
+    } 
+    </div>
 
             <div className="flex flex-row-reverse">
             <Link to={"/search-highest-view"}>
