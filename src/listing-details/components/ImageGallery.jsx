@@ -9,7 +9,7 @@ import {
 
 function ImageGallery({itemDetail}) {
   return (
-    <div className="px-1 mx-7 mt-3 lg:my-7 lg:h-112 flex items-center justify-center">
+    <div className="px-1 mx-7 mt-3 lg:my-7 h-fit lg:h-112 flex items-center justify-center">
 
           <Carousel className="size-fit flex items-center">
           <CarouselContent>
