@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa6";
 
 function Description({itemDetail}) {
   return (
-    <div className="max-h-112 mb-0 w-full ">
+    <div className="max-h-112 mb-0 w-full">
 {itemDetail?.description ? (
   <div className="p-5 rounded-xl shadow-md hover:shadow-lg mt-1 lg:mt-7 border h-full bg-white overflow-auto">
     <h2 className="font-bold text-2xl text-green-800">Description</h2>

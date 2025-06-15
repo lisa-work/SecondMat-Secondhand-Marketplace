@@ -49,8 +49,8 @@ function OwnersDetail({itemDetail}) {
         <div className="flex flex-col xl:flex-row justify-start items-start">
           <img src="/UserImage.svg" className="w-[70px] h-[70px] rounded-full"/>
           <div className="flex flex-col justify-start">
-          <h2 className="mt-2 font-bold text-xl text-gray-700">{itemDetail?.userName}</h2>
-          <h2 className="mt-2 text-gray-500 hover:opacity-75 cursor-pointer">{itemDetail?.createdBy}</h2>
+            <h2 className="mt-2 font-bold text-xl text-gray-700">{itemDetail?.userName}</h2>
+            <h2 className="mt-2 text-gray-500 hover:opacity-75 cursor-pointer">{itemDetail?.createdBy}</h2>
           </div>
         </div>
 

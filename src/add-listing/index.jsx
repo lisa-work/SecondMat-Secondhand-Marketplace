@@ -83,7 +83,6 @@ function AddListing() {
     e.preventDefault();
     setLoader(true);
 
-    // Check for required fields
     const missingFields = Details.Details.filter(field => 
         field.required && !formData?.[field.name]
     );
@@ -142,10 +141,8 @@ function AddListing() {
         <div className="px-10 md:px-20 my-10">
             <h2 className="font-bold text-4xl text-green-900">Add New Listing</h2>
             <form className="p-10 border rounded-xl mt-10 onSubmit={onSubmit}">
-                {/* Details */}
                 <div>
                     <h2 className="font-medium text-xl mb-6 text-green-900">Item Details</h2>
-                    
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         {Details.Details.map((item, index) => (
                             <div key={index}>
@@ -182,7 +179,6 @@ function AddListing() {
 
                 <Separator className="my-6"/>
 
-                {/* Options */}
                 <div>
                     <h2 className="font-medium text-xl my-6 text-green-900">Optional</h2>     
                     <div className="grid grid-cols-2 lg:grid-cols-4">
@@ -201,9 +197,6 @@ function AddListing() {
 
                 <Separator className="my-6"/>
                 
-                {/* Images */}
-                {/* <UploadImages/> */}
-                
                 <UploadImages triggerUploadImages={triggerUploadImages}
                 itemInfo={itemInfo}
                 mode={mode}
@@ -219,7 +212,6 @@ function AddListing() {
                     </Button>
                 </div>
             </form>
-            {/* <UploadImages/> */}
         </div>
         <Footer/>
     </div>

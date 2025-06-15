@@ -53,7 +53,7 @@ function ListingDetail() {
         <link rel="icon" type="image/x-icon" href="/logo.svg"></link>
         <Header/>
         
-        <div className="p-10 md:px-20">
+        <div className="p-5 md:px-20">
             <DetailHeader itemDetail={itemDetail}/>
             
             <div className="grid grid-cols-1 items-start justify-around lg:grid-cols-3 w-full mt-1 lg:mt-10 gap-5">

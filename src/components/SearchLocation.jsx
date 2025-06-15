@@ -132,7 +132,6 @@ return (
                     <IoSearchOutline className='flex text-4xl rounded-full bg-emerald-800 p-2 text-white hover:scale-105 
                     hover:font-bold transition-all'/>
                 </div>
-
             </div>
         </div>
     </div>

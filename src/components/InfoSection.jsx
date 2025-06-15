@@ -29,7 +29,6 @@ function InfoSection() {
             </p>
           </div>
         </div>
-
       </div>
     </div>
   </section>

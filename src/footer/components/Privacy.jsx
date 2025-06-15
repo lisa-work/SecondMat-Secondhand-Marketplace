@@ -12,28 +12,29 @@ function Privacy() {
         <h2 className="font-bold text-3xl md:text-5xl text-green-900 mb-7">Privacy Policy</h2>
         <p>At SecondMat, your privacy is important to us. This Privacy Policy explains how we collect, use, 
             and protect your information when you use our website and services.</p>
-      <div className="md:grid md:grid-cols-3 md:gap-7 grid-auto-columns items-start justify-center mt-3">
-      <div className="md:border-r-2 md:pr-3">            
-        <div className="my-3">
-        <strong>1. Information We Collect</strong>
-        <p>We collect information to provide a better user experience and improve our services. This includes:</p>
-            <li>Personal Information: When you register, we may collect your name, email, phone number, and location.</li>
-            <li>Listing Details: Any information you provide in item listings or communication with other users.</li>
-            <li>Usage Data: Information about how you interact with the platform, such as pages visited, items viewed, and searches.</li>
-            <li>Device Information: IP address, browser type, and device identifiers for analytics and security.</li>
+        <div className="md:grid md:grid-cols-3 md:gap-7 grid-auto-columns items-start justify-center mt-3">
+        <div className="md:border-r-2 md:pr-3">            
+          <div className="my-3">
+          <strong>1. Information We Collect</strong>
+          <p>We collect information to provide a better user experience and improve our services. This includes:</p>
+              <li>Personal Information: When you register, we may collect your name, email, phone number, and location.</li>
+              <li>Listing Details: Any information you provide in item listings or communication with other users.</li>
+              <li>Usage Data: Information about how you interact with the platform, such as pages visited, items viewed, and searches.</li>
+              <li>Device Information: IP address, browser type, and device identifiers for analytics and security.</li>
+          </div>
+
+          <div className="my-3">
+            <strong>2. How We Use Your Information</strong>
+            <p>We use the information we collect to:</p>
+              <li>Create and manage your account</li>
+              <li>Connect you with buyers and sellers</li>
+              <li>Improve and personalize your experience</li>
+              <li>Communicate with you (e.g., updates, offers, newsletters)</li>
+              <li>Monitor platform security and prevent fraud</li>
+          </div>
         </div>
 
-        <div className="my-3">
-          <strong>2. How We Use Your Information</strong>
-          <p>We use the information we collect to:</p>
-            <li>Create and manage your account</li>
-            <li>Connect you with buyers and sellers</li>
-            <li>Improve and personalize your experience</li>
-            <li>Communicate with you (e.g., updates, offers, newsletters)</li>
-            <li>Monitor platform security and prevent fraud</li>
-        </div>
-</div>
-<div className="md:border-r-2 md:pr-3">
+      <div className="md:border-r-2 md:pr-3">
         <div className="my-3">
           <strong>3. Sharing Your Information</strong>
           <p>We do not sell your personal data. We only share information in these cases:</p>
@@ -50,8 +51,9 @@ function Privacy() {
             <li>Improve functionality and performance</li>
             <li>You can control cookies through your browser settings.</li>
         </div>
-</div>
-<div>
+      </div>
+
+      <div>
         <div className="my-3">
           <strong>5. Data Security</strong>
           <p>We take reasonable steps to protect your information from unauthorized access, 
@@ -74,11 +76,11 @@ function Privacy() {
           <strong>8. Changes to This Policy</strong>
           <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by posting a notice on our site or emailing you.</p>
         </div>
-</div>
-</div>
-        </div>
-        <Footer/>
+      </div>
     </div>
+  </div>
+  <Footer/>
+  </div>
   )
 }
 

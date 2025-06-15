@@ -103,18 +103,8 @@ function TermsCondition() {
             <h3><strong>12. Governing Law</strong></h3>
             <p>These Terms are governed by the laws of Canada, without regard to conflict of law principles.</p>
         </div>
-        
         </div>
         </div>
-
-        {/* <div className="border rounded-lg border-green-900 p-3 text-green-900 hover:shadow-sm hover:shadow-green-900 mt-5">
-            <h3 className="underline underline-offset-2"><strong>Need Help?</strong></h3>
-            <p>If you have questions, feedback, or concerns, please reach out anytime.
-            <p>
-            📧 Contact Us: ngocanhthu.work@gmail.com
-            </p>
-            </p>
-        </div> */}
         </div>
         <Footer/>
     </div>

@@ -23,13 +23,13 @@ function Item({item}) {
             <h2 className='text-sm font-medium mb-2 text-black md:text-md lg:text-xl line-clamp-1'>{item?.listingTitle}</h2>
 
               <div className="flex flex-row  items-center justify-between">
-              <h2 className="text-sm lg:text-md text-gray-500">{item?.view} views</h2>
-              <h2 className="hidden text-xs md:text-sm lg:text-md lg:flex items-center justify-end text-blue-500 
-                hover:cursor-pointer hover:text-blue-600 hover:underline 
-                hover:underline-offset-2">
-                <IoOpenOutline className="mr-2"/>
-                More Details
-              </h2>
+                <h2 className="text-sm lg:text-md text-gray-500">{item?.view} views</h2>
+                <h2 className="hidden text-xs md:text-sm lg:text-md lg:flex items-center justify-end text-blue-500 
+                  hover:cursor-pointer hover:text-blue-600 hover:underline 
+                  hover:underline-offset-2">
+                  <IoOpenOutline className="mr-2"/>
+                  More Details
+                </h2>
               </div>
 
                 <Separator className="mt-3 mb-3"/>
@@ -37,28 +37,28 @@ function Item({item}) {
                 <div>
 
                     <div className="text-sm flex items-center mt-2">
-                    <IoPricetagsOutline className="mr-2"/>
-                    <h2>CAD {item?.sellingPrice}</h2>
+                      <IoPricetagsOutline className="mr-2"/>
+                      <h2>CAD {item?.sellingPrice}</h2>
                     </div>
 
                     <div className="text-sm flex items-center mt-2">
-                    <IoLocationOutline className="mr-2"/>
-                    <h2>{item?.location}</h2>
+                      <IoLocationOutline className="mr-2"/>
+                      <h2>{item?.location}</h2>
                     </div>
 
                     <div className="text-sm flex items-center mt-2">
-                    <BiCategoryAlt className="mr-2"/>
-                    <h2>{item?.category}</h2>
+                      <BiCategoryAlt className="mr-2"/>
+                      <h2>{item?.category}</h2>
                     </div>
 
                     <div className="text-sm flex items-center mt-2">
-                    <VscDebugBreakpointConditionalUnverified className="mr-2"/>
-                    <h2>{item?.condition}</h2>
+                      <VscDebugBreakpointConditionalUnverified className="mr-2"/>
+                      <h2>{item?.condition}</h2>
                     </div>                          
 
                   <Separator className="my-3"/>
                   <div className="flex items-center mt-2">
-                  <h2 className="text-sm font-thin mb-3 line-clamp-2">{item?.description}</h2>
+                    <h2 className="text-sm font-thin mb-3 line-clamp-2">{item?.description}</h2>
                   </div>
                 </div>
             </div>

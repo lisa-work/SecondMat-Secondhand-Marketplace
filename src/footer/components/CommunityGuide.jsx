@@ -82,7 +82,6 @@ function CommunityGuide() {
             </p>
             </p>
         </div>
-
     </div>
   )
 }

@@ -83,7 +83,6 @@ function SellerGuide() {
                 If communication issues or problems arise, try to resolve them politely. If necessary, report the buyer or contact our support team for help.
                 </AccordionContent>
             </AccordionItem>
-
             </Accordion>
     </div>
   )

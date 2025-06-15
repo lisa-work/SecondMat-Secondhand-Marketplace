@@ -107,7 +107,6 @@ return (
         </div>
     </div>
 
-
                     <Select onValueChange={(value) => setCondition(value)}>
                         <SelectTrigger className="outline-none my-3 xl:border-none shadow-none w-full hover:opacity-70">
                             <SelectValue placeholder={condition || "Condition"}/>
@@ -146,7 +145,6 @@ return (
                     <IoSearchOutline className='flex text-4xl rounded-full bg-emerald-800 p-2 text-white hover:scale-105 
                     hover:font-bold transition-all'/>
                 </div>
-
             </div>
         </div>
     </div>
