@@ -77,7 +77,7 @@ function RadioSearch() {
     <link rel="icon" type="image/x-icon" href="/logo.svg" />
 <   HeaderNoInput/>
 
-    <div className="grid grid-cols-8 h-full">
+    <div className="grid lg:grid-cols-8 h-full">
         <div className="grid col-span-2 h-full">
         <   SearchResult/>
         </div>

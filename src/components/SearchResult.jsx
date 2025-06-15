@@ -36,7 +36,7 @@ useEffect(() => {
 
 return (
 
-<div className="h-fit sticky top-0">
+<div className="h-fit sticky top-0 bg-amber-100">
     <title>Search By Criteria</title>
     <link rel="icon" type="image/x-icon" href="/logo.svg" />
 
@@ -110,6 +110,8 @@ return (
                 </div>   
         {/* </div> */}
         </div>
+
+        
     </div>
     </div>
 </div>
