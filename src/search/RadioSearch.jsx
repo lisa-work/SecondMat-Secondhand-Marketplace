@@ -77,12 +77,12 @@ function RadioSearch() {
     <link rel="icon" type="image/x-icon" href="/logo.svg" />
 <   HeaderNoInput/>
 
-    <div className="grid lg:grid-cols-8 h-full">
-        <div className="grid col-span-2 h-full">
+    <div className="grid xl:grid-cols-8 h-full">
+        <div className="grid xl:col-span-2 h-full">
         <   SearchResult/>
         </div>
         
-        <div className="p-10 grid col-span-6 rounded-lg shadow-lg">
+        <div className="p-10 grid xl:col-span-6 rounded-lg shadow-lg">
             <h2 className="font-bold text-4xl text-left text-green-900">Search Result</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-7">
                 {itemList.length > 0 ? itemList.map((item,index)=> (
