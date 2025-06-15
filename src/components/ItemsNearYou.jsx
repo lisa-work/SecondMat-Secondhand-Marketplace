@@ -49,7 +49,7 @@ function ItemsNearYou() {
        
 
   return (
-    <div className="mx-24" id="neighborhood">
+    <div className="mx-5 lg:mx-24" id="neighborhood">
       <h2 className='mt-10 font-bold text-xl md:text-2xl 
       text-center mb-6 text-green-900'>Items Near You</h2>
 

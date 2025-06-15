@@ -37,7 +37,7 @@ function MostSearched() {
     }
 
   return (
-    <div className="mx-5 lg:mx-24 bg-amber-200" id="popular">
+    <div className="mx-5 lg:mx-24" id="popular">
         <h2 className='mt-10 font-bold text-xl md:text-2xl 
         text-center mb-6 text-green-900' >Top 10 Highest View Items</h2>
 

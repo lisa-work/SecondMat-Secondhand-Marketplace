@@ -90,48 +90,48 @@ function HeaderNoInput() {
 
       </div>
     </div>
-    
+
         <ul className='flex items-center justify-around bg-white border 
-        border-t-1 py-1 text-sm md:hidden gap-2'>
+        border-t-1 py-1 text-sm md:hidden gap-2 px-2'>
 
           {location.pathname !== '/home' && (
             <Link to={'/home'}>
-                <li className='font-bold text-md lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
+                <li className='font-bold text-xs lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
                 transition-all cursor-pointer'>Home</li>
             </Link>
           )}
 
           {location.pathname !== '/search' && (
             <Link to={'/search-by-criteria'}>
-              <li className='font-bold text-md lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
+              <li className='font-bold text-xs lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
               transition-all cursor-pointer'>Search</li>
             </Link>
           )}
 
           {location.pathname !== '/my-listing' && (
             <Link to={'/my-listing'}>
-              <li className='font-bold text-md lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
+              <li className='font-bold text-xs lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
               transition-all cursor-pointer'>Listing</li>
             </Link>
           )}
 
           {location.pathname !== '/about-us' && (
             <Link to={'/about-us'}>
-              <li className='font-bold text-md lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
+              <li className='font-bold text-xs lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
               transition-all cursor-pointer'>About</li>
             </Link>          
           )}
 
           {location.pathname !== '/guide' && (
             <Link to={'/guide'}>
-              <li className='font-bold text-md lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
+              <li className='font-bold text-xs lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
               transition-all cursor-pointer'>Guides</li>
             </Link>          
           )}          
           
           {location.pathname !== '/legal-policy' && (
             <Link to={'/legal-policy'}>
-              <li className='font-bold text-md lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
+              <li className='font-bold text-xs lg:text-lg underline underline-offset-2 text-green-900 hover:scale-110 hover:underline-offset-3 
               transition-all cursor-pointer'>Policy</li>
             </Link>          
           )}
