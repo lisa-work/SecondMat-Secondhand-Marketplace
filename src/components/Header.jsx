@@ -126,7 +126,7 @@ function Header() {
     </div>
 
         <ul className='flex items-center justify-around bg-white border 
-        border-t-1 py-1 text-sm md:hidden gap-2 px-2'>
+        border-t-1 py-2 text-sm md:hidden gap-2 px-2'>
 
           {location.pathname !== '/home' && (
             <Link to={'/home'}>
