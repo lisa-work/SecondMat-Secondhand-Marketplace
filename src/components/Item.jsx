@@ -15,7 +15,7 @@ function Item({item}) {
   return (
 
         <div onClick={handleClick} className='rounded-xl border hover:shadow-md cursor-pointer mx-1 h-150 my-2'>
-            <img src={item?.images[0]?.imageUrl || 'imgloader.jpg'}
+            <img src={item?.images[0]?.imageUrl || '/imgloader.jpg'}
             className="rounded-3xl object-cover p-3 w-200 h-80"/>
             
             <div className="p-4 lg:h-75">
