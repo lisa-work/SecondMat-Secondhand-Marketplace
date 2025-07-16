@@ -6,6 +6,7 @@ More importantly, this project serves as a testing ground where I apply what I'v
 
 # 📦 Secondhand Marketplace Web App (SecondMat)
 ### Live Demo: https://secondmat-secondhand-marketplace.vercel.app/
+### Video Demo: https://youtu.be/-bGbzFYYRbs
 
 A full-stack web application that allows users to post, browse, and manage secondhand items for sale. (Yes, it's just that simple)
 
