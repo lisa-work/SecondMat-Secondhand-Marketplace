@@ -5,8 +5,8 @@ Hi! I'm Ngoc Anh Thu, but I go by Lisa :>. I’ve just completed my first year i
 More importantly, this project serves as a testing ground where I apply what I've learned so far. As such, you'll likely spot some flaws at first glance. Nevertheless, if you're looking for a challenge or an opportunity to improve a web app, I hope you enjoy exploring and building upon my work.
 
 # 📦 Secondhand Marketplace Web App (SecondMat)
-### Live Demo: https://secondmat-secondhand-marketplace.vercel.app/
-### Video Demo: https://youtu.be/-bGbzFYYRbs
+#### Live Demo: https://secondmat-secondhand-marketplace.vercel.app/
+#### Video Demo: https://youtu.be/-bGbzFYYRbs
 
 A full-stack web application that allows users to post, browse, and manage secondhand items for sale. (Yes, it's just that simple)
 
